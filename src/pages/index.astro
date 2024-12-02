@@ -1,0 +1,14 @@
+---
+import List from "@/components/List.astro";
+import Layout from "@/layouts/Layout.astro";
+
+console.log(Astro, "31231231");
+const items = new Array(10).fill(0);
+console.log(items), "312321";
+---
+
+<Layout title="Welcome to Astro.">
+  {items.map((_, index) => <List key={index} />)}
+</Layout>
+
+<!-- 修改文件 -->
