@@ -1,9 +1,12 @@
+---
+import Heading from "./Heading.svelte";
+import Tag from "./Tag.svelte";
+---
+
 <div class="w-full p-2 box-border">
-  <div>这是一个标题</div>
-  <div class="flex gap-x-1">
-    <span>这是时间</span><span>这是时间</span><span>这是分类</span><span
-      >这是作者</span
-    >
+  <Heading class="text-base" level={4}>这是一个标题</Heading>
+  <div class="flex gap-x-1 text-xs py-1 box-border">
+    <Tag>这是时间</Tag><Tag>这是时间</Tag><Tag>这是分类</Tag><Tag>这是作者</Tag>
   </div>
   <div>
     这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分
