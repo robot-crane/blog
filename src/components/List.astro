@@ -1,12 +1,17 @@
 ---
 import Heading from "./Heading.svelte";
 import Tag from "./Tag.svelte";
+import Space from "./Space.svelte";
 ---
 
 <div class="w-full p-2 box-border">
   <Heading class="text-base" level={4}>这是一个标题</Heading>
   <div class="flex gap-x-1 text-xs py-1 box-border">
-    <Tag>这是时间</Tag><Tag>这是时间</Tag><Tag>这是分类</Tag><Tag>这是作者</Tag>
+    <Space align="start" gap={2}>
+      <Tag>这是时间</Tag><Tag>这是时间</Tag><Tag>这是分类</Tag><Tag
+        >这是作者</Tag
+      >
+    </Space>
   </div>
   <div>
     这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分

@@ -7,6 +7,7 @@
     "jsxImportSource": "svelte",
     "baseUrl": ".",
     "allowJs": true,
+    "types": ["svelte"],
     "paths": {
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
