@@ -19,7 +19,7 @@
       : `gap-x-${gap}`;
 </script>
 
-<div class={clsx("w-full flex", rowClass, gapClass)}>
+<div class={clsx("flex items-center", rowClass, gapClass)}>
   <slot />
 </div>
 

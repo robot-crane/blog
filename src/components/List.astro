@@ -4,16 +4,25 @@ import Tag from "./Tag.svelte";
 import Space from "./Space.svelte";
 ---
 
-<div class="w-full p-2 box-border">
-  <Heading class="text-base" level={4}>这是一个标题</Heading>
-  <div class="flex gap-x-1 text-xs py-1 box-border">
+<div class="w-full p-2 mb-4 box-border border-b">
+  <a class="cursor-pointer" href="/content">
+    <Heading className="w-full truncate" level={4}>
+      这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题
+    </Heading>
+  </a>
+  <div class="mt-4">
     <Space align="start" gap={2}>
-      <Tag>这是时间</Tag><Tag>这是时间</Tag><Tag>这是分类</Tag><Tag
-        >这是作者</Tag
-      >
+      <Tag>React</Tag><Tag>Nodejs</Tag><Tag>ayun</Tag>
+      <Tag>2024-12-22</Tag>
     </Space>
   </div>
-  <div>
+  <p class="text-sm details mt-2">
     这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分这是文章的描述或者关键字或者开头的部分
-  </div>
+  </p>
 </div>
+
+<style>
+  .details {
+    color: var(--main-font-color);
+  }
+</style>
